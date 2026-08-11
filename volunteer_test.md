@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<나의 봉사 성향 테스트>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
