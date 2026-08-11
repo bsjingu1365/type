@@ -90,9 +90,7 @@
       box-shadow: 0 18px 50px rgba(51, 94, 78, 0.11);
     }
 
-    /* =========================
-       시작 화면
-    ========================= */
+    /* 시작 화면 */
 
     .start-hero {
       padding: 34px 25px 30px;
@@ -176,10 +174,6 @@
       line-height: 1.75;
     }
 
-    .guide-box strong {
-      font-weight: 900;
-    }
-
     .name-label {
       display: block;
       margin-bottom: 7px;
@@ -221,10 +215,6 @@
       box-shadow: 0 7px 18px rgba(36, 126, 211, 0.18);
     }
 
-    .start-btn:hover {
-      background: #1e72c1;
-    }
-
     .notice {
       margin-top: 12px;
       padding: 13px;
@@ -243,9 +233,7 @@
       font-size: 11px;
     }
 
-    /* =========================
-       질문 화면
-    ========================= */
+    /* 질문 화면 */
 
     .quiz-inner {
       padding: 24px;
@@ -347,9 +335,7 @@
       font-weight: 900;
     }
 
-    /* =========================
-       결과 화면
-    ========================= */
+    /* 결과 화면 */
 
     .result-inner {
       padding: 24px;
@@ -436,6 +422,57 @@
       background: #f8faf9;
       font-size: 14px;
       font-weight: 900;
+      line-height: 1.65;
+    }
+
+    /* 외부 링크 */
+
+    .link-section {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #e6ece9;
+    }
+
+    .link-title {
+      margin: 0 0 11px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #315c4e;
+    }
+
+    .portal-btn,
+    .center-btn {
+      width: 100%;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .portal-btn {
+      background: #247ed3;
+      color: #ffffff;
+    }
+
+    .center-btn {
+      margin-top: 9px;
+      background: #379a74;
+      color: #ffffff;
+    }
+
+    .link-guide {
+      margin-top: 11px;
+      padding: 12px;
+      border: 1px dashed #add2c3;
+      border-radius: 11px;
+      background: #f8fcfa;
+      color: #70827b;
+      font-size: 12px;
+      text-align: center;
       line-height: 1.65;
     }
 
@@ -549,25 +586,11 @@
 
         <div class="type-grid">
 
-          <div class="type-item">
-            ❤️ 따뜻한 나눔형
-          </div>
-
-          <div class="type-item">
-            ⭐ 함께하는 리더형
-          </div>
-
-          <div class="type-item">
-            🌱 환경 실천형
-          </div>
-
-          <div class="type-item">
-            🎨 재능나눔형
-          </div>
-
-          <div class="type-item">
-            📚 성장 지원형
-          </div>
+          <div class="type-item">❤️ 따뜻한 나눔형</div>
+          <div class="type-item">⭐ 함께하는 리더형</div>
+          <div class="type-item">🌱 환경 실천형</div>
+          <div class="type-item">🎨 재능나눔형</div>
+          <div class="type-item">📚 성장 지원형</div>
 
         </div>
 
@@ -716,9 +739,7 @@
 
         <div class="result-section">
 
-          <h3>
-            ✨ 나의 봉사 키워드
-          </h3>
+          <h3>✨ 나의 봉사 키워드</h3>
 
           <div
             id="keywordList"
@@ -729,9 +750,7 @@
 
         <div class="result-section">
 
-          <h3>
-            🙌 추천 봉사활동
-          </h3>
+          <h3>🙌 추천 봉사활동</h3>
 
           <div
             id="recommendList"
@@ -745,7 +764,42 @@
           class="result-message"
         ></div>
 
+
+        <!-- 외부 링크 -->
+        <div class="link-section">
+
+          <h3 class="link-title">
+            🔎 봉사활동 더 찾아보기
+          </h3>
+
+          <a
+            href="https://www.1365.go.kr/vols/main.do"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="portal-btn"
+          >
+            1365 자원봉사포털 바로가기
+          </a>
+
+          <a
+            href="https://www.bsjingu1365.or.kr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="center-btn"
+          >
+            부산진구자원봉사센터 홈페이지 바로가기
+          </a>
+
+          <div class="link-guide">
+            나에게 맞는 봉사 유형을 확인했다면<br>
+            1365 자원봉사포털과 부산진구자원봉사센터 홈페이지에서
+            실제 참여할 수 있는 봉사활동을 찾아보세요!
+          </div>
+
+        </div>
+
       </div>
+
 
       <div class="result-buttons">
 
@@ -786,20 +840,16 @@ const TYPES = {
   A: {
     title: "따뜻한 나눔형",
     icon: "❤️",
-
     tagline:
       "공감과 배려로 이웃에게 따뜻함을 전하는 봉사자",
-
     description:
       "다른 사람의 이야기에 귀 기울이고 도움이 필요한 사람을 살피는 데 자연스럽게 마음이 가는 유형이에요. 사람과 사람 사이의 따뜻한 관계를 중요하게 생각하며 직접적인 나눔과 돌봄 활동에서 큰 보람을 느낄 수 있어요.",
-
     keywords: [
       "공감",
       "배려",
       "소통",
       "돌봄"
     ],
-
     recommends: [
       "어르신 말벗",
       "안부 확인",
@@ -807,33 +857,26 @@ const TYPES = {
       "반찬·도시락 나눔",
       "아동 돌봄 보조"
     ],
-
     message:
       "당신의 따뜻한 관심과 배려가 누군가에게 큰 힘이 될 수 있어요!",
-
     color: "#EF607D",
     soft: "#FFF0F4",
     border: "#FFC7D2"
   },
 
-
   B: {
     title: "함께하는 리더형",
     icon: "⭐",
-
     tagline:
       "사람들과 힘을 모아 변화를 이끌어가는 봉사자",
-
     description:
       "여러 사람과 함께 활동하고 의견을 모아 하나의 목표를 이루는 과정에서 즐거움을 느끼는 유형이에요. 사람들을 자연스럽게 연결하고 활동을 이끌어가는 역할에 잘 어울려요.",
-
     keywords: [
       "리더십",
       "협동",
       "적극성",
       "소통"
     ],
-
     recommends: [
       "캠페인 운영",
       "행사 진행",
@@ -841,33 +884,26 @@ const TYPES = {
       "체험부스 운영",
       "지역사회 홍보"
     ],
-
     message:
       "여러 사람의 마음을 하나로 모으면 더 큰 변화를 만들 수 있어요!",
-
     color: "#3488D1",
     soft: "#EDF7FF",
     border: "#ACD5F4"
   },
 
-
   C: {
     title: "환경 실천형",
     icon: "🌱",
-
     tagline:
       "작은 행동부터 직접 실천하며 변화를 만드는 봉사자",
-
     description:
       "생각에 그치지 않고 직접 행동하는 것을 중요하게 여기는 유형이에요. 특히 환경과 지역사회의 변화를 눈으로 확인할 수 있는 실천형 활동에서 즐거움과 성취감을 느낄 수 있어요.",
-
     keywords: [
       "실천",
       "환경",
       "책임감",
       "지속가능성"
     ],
-
     recommends: [
       "플로깅",
       "환경정화",
@@ -875,33 +911,26 @@ const TYPES = {
       "환경캠페인",
       "탄소중립 실천"
     ],
-
     message:
       "당신의 작은 실천이 우리 동네와 지구를 바꾸는 시작이 될 수 있어요!",
-
     color: "#37A55A",
     soft: "#EEFAF0",
     border: "#BCE3C6"
   },
 
-
   D: {
     title: "재능나눔형",
     icon: "🎨",
-
     tagline:
       "자신의 재능과 아이디어를 나눔으로 연결하는 봉사자",
-
     description:
       "그림, 음악, 만들기, 사진, 영상, 글쓰기처럼 자신이 좋아하거나 잘하는 일을 다른 사람과 나누는 것을 즐기는 유형이에요. 나만의 개성과 아이디어를 봉사활동과 연결할 때 더욱 큰 즐거움을 느낄 수 있어요.",
-
     keywords: [
       "창의성",
       "재능",
       "표현",
       "아이디어"
     ],
-
     recommends: [
       "미술·공예 봉사",
       "공연 봉사",
@@ -909,33 +938,26 @@ const TYPES = {
       "디자인·홍보",
       "재능기부"
     ],
-
     message:
       "내가 잘하고 좋아하는 일이 누군가에게 특별한 선물이 될 수 있어요!",
-
     color: "#8D65C7",
     soft: "#F5F0FC",
     border: "#D6C4ED"
   },
 
-
   E: {
     title: "성장 지원형",
     icon: "📚",
-
     tagline:
       "배움과 경험을 나누며 다른 사람의 성장을 돕는 봉사자",
-
     description:
       "새로운 것을 배우고 다른 사람에게 알려주는 과정을 좋아하는 유형이에요. 내가 알고 있는 지식과 경험을 나누고 상대방이 조금씩 성장하는 모습을 볼 때 큰 보람을 느낄 수 있어요.",
-
     keywords: [
       "배움",
       "교육",
       "성장",
       "멘토링"
     ],
-
     recommends: [
       "학습 멘토링",
       "진로 멘토링",
@@ -943,10 +965,8 @@ const TYPES = {
       "아동·청소년 활동",
       "디지털 교육"
     ],
-
     message:
       "당신의 지식과 경험이 누군가의 새로운 가능성을 열어줄 수 있어요!",
-
     color: "#EC8A22",
     soft: "#FFF5E8",
     border: "#FFD29D"
@@ -955,145 +975,107 @@ const TYPES = {
 };
 
 
-
-/* =========================
-   6개 질문
-========================= */
+/* 6개 문항 */
 
 const QUESTIONS = [
 
   {
     text:
       "봉사활동을 시작한다면 가장 끌리는 활동은?",
-
     answers: {
       A:
         "혼자 계신 어르신의 말벗이 되어드리기",
-
       B:
         "친구들과 함께 캠페인을 기획하고 진행하기",
-
       C:
         "우리 동네를 걸으며 환경정화 활동하기",
-
       D:
         "그림이나 만들기 재능을 활용해 나눔하기",
-
       E:
         "어린 친구들의 공부나 체험활동 도와주기"
     }
   },
 
-
   {
     text:
       "친구들과 무언가를 준비할 때 나는?",
-
     answers: {
       A:
         "힘들어하는 친구가 없는지 먼저 살펴본다.",
-
       B:
         "의견을 내고 친구들의 역할을 정리한다.",
-
       C:
         "작은 것이라도 직접 행동으로 옮기는 편이다.",
-
       D:
         "재미있고 새로운 아이디어를 제안한다.",
-
       E:
         "친구들이 어려워하는 부분을 설명해준다."
     }
   },
 
-
   {
     text:
       "봉사활동을 마친 뒤 가장 뿌듯할 것 같은 순간은?",
-
     answers: {
       A:
         "“덕분에 힘이 됐어요.”라는 말을 들었을 때",
-
       B:
         "모두가 힘을 합쳐 목표를 달성했을 때",
-
       C:
         "나의 작은 행동으로 주변에 변화가 생겼을 때",
-
       D:
         "내가 가진 재능으로 사람들이 즐거워할 때",
-
       E:
         "내가 도운 사람이 새로운 것을 배우거나 성장했을 때"
     }
   },
 
-
   {
     text:
       "우리 동네에 새로운 봉사활동을 만든다면?",
-
     answers: {
       A:
         "홀로 지내는 이웃에게 안부를 전하는 활동",
-
       B:
         "주민들이 함께 참여하는 캠페인",
-
       C:
         "깨끗한 우리 동네를 만드는 환경 프로젝트",
-
       D:
         "주민들과 함께하는 문화·예술 체험활동",
-
       E:
         "아이들과 함께 배우는 교육·멘토링 활동"
     }
   },
 
-
   {
     text:
       "봉사활동에서 내가 맡고 싶은 역할은?",
-
     answers: {
       A:
         "참여자를 세심하게 챙기는 역할",
-
       B:
         "사람들을 이끌고 전체 활동을 진행하는 역할",
-
       C:
         "현장에서 직접 움직이고 실천하는 역할",
-
       D:
         "홍보물이나 체험 프로그램을 만드는 역할",
-
       E:
         "활동 내용을 설명하고 알려주는 역할"
     }
   },
 
-
   {
     text:
       "내가 생각하는 가장 멋진 봉사자는?",
-
     answers: {
       A:
         "다른 사람의 마음을 따뜻하게 살피는 사람",
-
       B:
         "여러 사람을 하나로 모아 함께 행동하는 사람",
-
       C:
         "작은 일이라도 꾸준히 실천하는 사람",
-
       D:
         "자신이 가진 재능을 기꺼이 나누는 사람",
-
       E:
         "자신의 지식과 경험을 다른 사람과 나누는 사람"
     }
@@ -1103,12 +1085,8 @@ const QUESTIONS = [
 
 
 let currentQuestion = 0;
-
 let answers =
-  new Array(
-    QUESTIONS.length
-  ).fill(null);
-
+  new Array(QUESTIONS.length).fill(null);
 let userName = "";
 
 
@@ -1119,9 +1097,7 @@ function showScreen(id) {
   document
     .querySelectorAll(".screen")
     .forEach(function(screen) {
-
       screen.classList.remove("active");
-
     });
 
   document
@@ -1149,9 +1125,7 @@ function startTest() {
   currentQuestion = 0;
 
   answers =
-    new Array(
-      QUESTIONS.length
-    ).fill(null);
+    new Array(QUESTIONS.length).fill(null);
 
   renderQuestion();
 
@@ -1181,9 +1155,7 @@ function renderQuestion() {
     .getElementById("questionNumber")
     .textContent =
     "QUESTION " +
-    String(
-      currentQuestion + 1
-    ).padStart(2, "0");
+    String(currentQuestion + 1).padStart(2, "0");
 
   document
     .getElementById("questionText")
@@ -1192,15 +1164,7 @@ function renderQuestion() {
 
 
   const progress =
-    (
-      (
-        currentQuestion + 1
-      )
-      /
-      QUESTIONS.length
-    )
-    *
-    100;
+    ((currentQuestion + 1) / QUESTIONS.length) * 100;
 
   document
     .getElementById("progressBar")
@@ -1230,20 +1194,16 @@ function renderQuestion() {
       const button =
         document.createElement("button");
 
-      button.type = "button";
+      button.type =
+        "button";
 
       button.className =
         "answer-btn";
 
       button.innerHTML = `
-        <span class="answer-letter">
-          ${type}
-        </span>
-        <span>
-          ${text}
-        </span>
+        <span class="answer-letter">${type}</span>
+        <span>${text}</span>
       `;
-
 
       button.addEventListener(
         "click",
@@ -1252,19 +1212,15 @@ function renderQuestion() {
           answers[currentQuestion] =
             type;
 
-
           if (
             currentQuestion <
             QUESTIONS.length - 1
           ) {
 
             currentQuestion++;
-
             renderQuestion();
 
-          }
-
-          else {
+          } else {
 
             showResult();
 
@@ -1272,7 +1228,6 @@ function renderQuestion() {
 
         }
       );
-
 
       answerList
         .appendChild(button);
@@ -1286,12 +1241,9 @@ function renderQuestion() {
 
 function goBack() {
 
-  if (
-    currentQuestion > 0
-  ) {
+  if (currentQuestion > 0) {
 
     currentQuestion--;
-
     renderQuestion();
 
   }
@@ -1299,9 +1251,7 @@ function goBack() {
 }
 
 
-/* =========================
-   결과 계산
-========================= */
+/* 결과 계산 */
 
 function calculateResult() {
 
@@ -1312,7 +1262,6 @@ function calculateResult() {
     D: 0,
     E: 0
   };
-
 
   answers.forEach(
     function(answer) {
@@ -1336,52 +1285,29 @@ function calculateResult() {
       .keys(score)
       .filter(
         function(type) {
-
-          return (
-            score[type] === maxScore
-          );
-
+          return score[type] === maxScore;
         }
       );
 
 
-  /* 단독 1위 */
-
-  if (
-    tied.length === 1
-  ) {
-
+  if (tied.length === 1) {
     return tied[0];
-
   }
 
 
-  /*
-    동점 처리
-
-    1순위 : Q3
-    2순위 : Q1
-  */
+  /* 동점: Q3 → Q1 */
 
   if (
-    tied.includes(
-      answers[2]
-    )
+    tied.includes(answers[2])
   ) {
-
     return answers[2];
-
   }
 
 
   if (
-    tied.includes(
-      answers[0]
-    )
+    tied.includes(answers[0])
   ) {
-
     return answers[0];
-
   }
 
 
@@ -1390,7 +1316,7 @@ function calculateResult() {
 }
 
 
-/* 결과 화면 */
+/* 결과 출력 */
 
 function showResult() {
 
@@ -1416,20 +1342,10 @@ function showResult() {
     document
       .getElementById("resultLabel");
 
-  if (userName) {
-
-    resultLabel.textContent =
-      userName +
-      "님의 봉사 성향은?";
-
-  }
-
-  else {
-
-    resultLabel.textContent =
-      "나의 봉사 성향은?";
-
-  }
+  resultLabel.textContent =
+    userName
+      ? userName + "님의 봉사 성향은?"
+      : "나의 봉사 성향은?";
 
   resultLabel.style.color =
     result.color;
@@ -1464,8 +1380,6 @@ function showResult() {
     result.border;
 
 
-  /* 키워드 */
-
   const keywordList =
     document
       .getElementById("keywordList");
@@ -1497,8 +1411,6 @@ function showResult() {
     }
   );
 
-
-  /* 추천 봉사 */
 
   const recommendList =
     document
@@ -1535,9 +1447,7 @@ function showResult() {
   document
     .getElementById("resultMessage")
     .textContent =
-    "“" +
-    result.message +
-    "”";
+    "“" + result.message + "”";
 
 
   document
@@ -1557,9 +1467,7 @@ function restartTest() {
   currentQuestion = 0;
 
   answers =
-    new Array(
-      QUESTIONS.length
-    ).fill(null);
+    new Array(QUESTIONS.length).fill(null);
 
   userName = "";
 
@@ -1582,27 +1490,13 @@ async function shareResult() {
   const result =
     TYPES[type];
 
+  const nameText =
+    userName
+      ? userName + "님의 "
+      : "나의 ";
 
-  let shareText = "";
-
-
-  if (userName) {
-
-    shareText +=
-      userName +
-      "님의 ";
-
-  }
-
-  else {
-
-    shareText +=
-      "나의 ";
-
-  }
-
-
-  shareText +=
+  const shareText =
+    nameText +
     "봉사 성향은 " +
     result.icon +
     " " +
@@ -1624,33 +1518,22 @@ async function shareResult() {
           shareText
       });
 
-    }
+    } catch (error) {}
 
-    catch (error) {
-      /* 공유창 취소 */
-    }
-
-  }
-
-  else {
+  } else {
 
     try {
 
-      await navigator
-        .clipboard
-        .writeText(
-          shareText
-        );
-
+      await navigator.clipboard.writeText(
+        shareText
+      );
 
       document
         .getElementById("shareStatus")
         .textContent =
         "결과와 테스트 링크를 복사했습니다.";
 
-    }
-
-    catch (error) {
+    } catch (error) {
 
       document
         .getElementById("shareStatus")
@@ -1664,7 +1547,7 @@ async function shareResult() {
 }
 
 
-/* 이름 입력 후 Enter */
+/* Enter 키로 시작 */
 
 document
   .getElementById("nameInput")
@@ -1672,12 +1555,8 @@ document
     "keydown",
     function(event) {
 
-      if (
-        event.key === "Enter"
-      ) {
-
+      if (event.key === "Enter") {
         startTest();
-
       }
 
     }
