@@ -14,15 +14,9 @@
     :root {
       --text: #213f53;
       --subtext: #6f7c84;
-      --line: #dfe8e4;
       --bg: #edf8f3;
       --green: #379a74;
-      --green2: #5ab68d;
       --blue: #247ed3;
-    }
-
-    html {
-      min-height: 100%;
     }
 
     body {
@@ -35,10 +29,7 @@
         "Malgun Gothic",
         sans-serif;
       color: var(--text);
-      background:
-        radial-gradient(circle at 10% 10%, rgba(70, 175, 132, 0.14), transparent 28%),
-        radial-gradient(circle at 90% 10%, rgba(107, 185, 241, 0.12), transparent 28%),
-        #edf8f3;
+      background: #edf8f3;
     }
 
     button,
@@ -54,9 +45,6 @@
       width: min(92%, 680px);
       min-height: 100vh;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 24px 0;
     }
 
@@ -67,26 +55,13 @@
 
     .screen.active {
       display: block;
-      animation: fadeIn 0.28s ease;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     .card {
       width: 100%;
       overflow: hidden;
       border-radius: 24px;
-      background: #ffffff;
+      background: #fff;
       box-shadow: 0 18px 50px rgba(51, 94, 78, 0.11);
     }
 
@@ -95,44 +70,36 @@
     .start-hero {
       padding: 34px 25px 30px;
       text-align: center;
-      color: #ffffff;
-      background:
-        linear-gradient(
-          135deg,
-          #359a74,
-          #5ab68d
-        );
+      color: #fff;
+      background: linear-gradient(135deg, #359a74, #5ab68d);
     }
 
     .start-mini {
-      margin-bottom: 17px;
+      margin-bottom: 15px;
       font-size: 13px;
       font-weight: 900;
     }
 
     .start-icon {
-      margin-bottom: 10px;
       font-size: 42px;
+      margin-bottom: 10px;
     }
 
     .start-title {
       margin: 0;
-      font-size: clamp(29px, 7vw, 39px);
+      font-size: 36px;
       font-weight: 900;
-      line-height: 1.25;
       letter-spacing: -1.5px;
     }
 
     .start-description {
-      margin: 13px auto 0;
-      max-width: 470px;
+      margin: 13px 0 0;
       font-size: 14px;
       line-height: 1.8;
-      opacity: 0.97;
     }
 
     .start-content {
-      padding: 25px 23px 24px;
+      padding: 24px;
     }
 
     .section-title {
@@ -146,7 +113,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 9px;
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
 
     .type-item {
@@ -163,8 +130,8 @@
     }
 
     .guide-box {
-      margin-bottom: 20px;
-      padding: 17px 14px;
+      margin-bottom: 19px;
+      padding: 16px;
       border: 1px solid #efca73;
       border-radius: 14px;
       background: #fffaf0;
@@ -182,11 +149,6 @@
       font-weight: 900;
     }
 
-    .optional {
-      color: #889b94;
-      font-weight: 500;
-    }
-
     .name-input {
       width: 100%;
       height: 50px;
@@ -197,33 +159,26 @@
       background: #f7fcfa;
     }
 
-    .name-input:focus {
-      border-color: #399b76;
-      box-shadow: 0 0 0 3px rgba(57, 155, 118, 0.10);
-    }
-
     .start-btn {
       width: 100%;
       height: 54px;
       margin-top: 13px;
-      border: none;
+      border: 0;
       border-radius: 12px;
       background: #247ed3;
-      color: #ffffff;
-      font-size: 15px;
+      color: white;
       font-weight: 900;
-      box-shadow: 0 7px 18px rgba(36, 126, 211, 0.18);
     }
 
     .notice {
       margin-top: 12px;
-      padding: 13px;
+      padding: 12px;
       border: 1px dashed #9acbb8;
       border-radius: 12px;
       color: #6c8279;
       text-align: center;
       font-size: 12px;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     .footer {
@@ -233,7 +188,7 @@
       font-size: 11px;
     }
 
-    /* 질문 화면 */
+    /* 질문 */
 
     .quiz-inner {
       padding: 24px;
@@ -246,11 +201,9 @@
     }
 
     .back-btn {
-      padding: 7px 0;
-      border: none;
+      border: 0;
       background: transparent;
       color: #6d797f;
-      font-size: 14px;
       font-weight: 800;
     }
 
@@ -264,17 +217,15 @@
       width: 100%;
       height: 8px;
       margin-top: 14px;
-      overflow: hidden;
       border-radius: 999px;
+      overflow: hidden;
       background: #e8efec;
     }
 
     .progress-bar {
-      width: 16.67%;
       height: 100%;
-      border-radius: 999px;
+      width: 16.67%;
       background: linear-gradient(90deg, #379a74, #6ac39d);
-      transition: width 0.25s ease;
     }
 
     .question-area {
@@ -286,14 +237,12 @@
       color: #399875;
       font-size: 12px;
       font-weight: 900;
-      letter-spacing: 1px;
     }
 
     .question-text {
       margin: 0;
-      font-size: clamp(22px, 5vw, 28px);
+      font-size: 27px;
       line-height: 1.5;
-      letter-spacing: -1px;
     }
 
     .answer-list {
@@ -303,22 +252,20 @@
 
     .answer-btn {
       width: 100%;
-      min-height: 65px;
+      min-height: 64px;
       display: flex;
       align-items: center;
       gap: 12px;
       padding: 14px;
       border: 1.5px solid #dfe7e3;
       border-radius: 15px;
-      background: #ffffff;
+      background: white;
       color: #294355;
       text-align: left;
       line-height: 1.5;
-      transition: 0.15s ease;
     }
 
     .answer-btn:hover {
-      transform: translateY(-1px);
       border-color: #74bea1;
       background: #f5fbf8;
     }
@@ -335,10 +282,10 @@
       font-weight: 900;
     }
 
-    /* 결과 화면 */
+    /* 결과 */
 
     .result-inner {
-      padding: 24px;
+      padding: 22px;
     }
 
     .result-top {
@@ -350,10 +297,10 @@
     }
 
     .result-card {
-      padding: 28px;
+      padding: 27px;
       border: 2px solid #ffc6d2;
       border-radius: 22px;
-      background: #ffffff;
+      background: #fff;
     }
 
     .result-icon {
@@ -373,19 +320,17 @@
 
     .result-title {
       margin: 0;
-      font-size: clamp(31px, 7vw, 42px);
-      letter-spacing: -1.8px;
+      font-size: 40px;
     }
 
     .result-tagline {
-      margin: 12px 0 0;
+      margin-top: 12px;
       font-size: 17px;
       font-weight: 900;
       line-height: 1.6;
     }
 
     .result-description {
-      margin: 13px 0 0;
       color: #69777e;
       font-size: 14px;
       line-height: 1.8;
@@ -425,55 +370,54 @@
       line-height: 1.65;
     }
 
-    /* 외부 링크 */
+    /* 결과 아래 링크 영역 */
 
-    .link-section {
+    .volunteer-links {
       margin-top: 18px;
-      padding-top: 18px;
-      border-top: 1px solid #e6ece9;
+      padding: 20px 16px;
+      border-radius: 18px;
+      background: #f6fbf9;
+      border: 1px solid #d5e9e0;
     }
 
-    .link-title {
-      margin: 0 0 11px;
-      font-size: 14px;
+    .volunteer-links-title {
+      margin: 0 0 7px;
+      text-align: center;
+      color: #266c55;
+      font-size: 17px;
       font-weight: 900;
-      color: #315c4e;
     }
 
-    .portal-btn,
-    .center-btn {
+    .volunteer-links-text {
+      margin: 0 0 15px;
+      text-align: center;
+      color: #708078;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .external-link {
       width: 100%;
-      min-height: 50px;
+      min-height: 52px;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-decoration: none;
+      padding: 12px;
       border-radius: 12px;
+      text-decoration: none;
       font-size: 14px;
       font-weight: 900;
     }
 
-    .portal-btn {
+    .link-1365 {
       background: #247ed3;
-      color: #ffffff;
+      color: white;
     }
 
-    .center-btn {
-      margin-top: 9px;
+    .link-center {
+      margin-top: 10px;
       background: #379a74;
-      color: #ffffff;
-    }
-
-    .link-guide {
-      margin-top: 11px;
-      padding: 12px;
-      border: 1px dashed #add2c3;
-      border-radius: 11px;
-      background: #f8fcfa;
-      color: #70827b;
-      font-size: 12px;
-      text-align: center;
-      line-height: 1.65;
+      color: white;
     }
 
     .result-buttons {
@@ -486,9 +430,8 @@
     .share-btn,
     .restart-btn {
       min-height: 52px;
-      border: none;
+      border: 0;
       border-radius: 12px;
-      font-size: 14px;
       font-weight: 900;
     }
 
@@ -499,29 +442,20 @@
 
     .restart-btn {
       background: #379a74;
-      color: #ffffff;
+      color: white;
     }
 
     .share-status {
-      min-height: 19px;
-      margin: 9px 0 0;
+      min-height: 18px;
       text-align: center;
-      color: #74837b;
       font-size: 12px;
+      color: #74837b;
     }
 
     @media (max-width: 520px) {
       .container {
         width: calc(100% - 18px);
         padding: 12px 0;
-      }
-
-      .start-hero {
-        padding: 30px 18px 26px;
-      }
-
-      .start-content {
-        padding: 22px 16px;
       }
 
       .type-grid {
@@ -532,13 +466,18 @@
         grid-column: auto;
       }
 
+      .start-content,
       .quiz-inner,
       .result-inner {
         padding: 18px 15px;
       }
 
-      .result-card {
-        padding: 23px 18px;
+      .question-text {
+        font-size: 22px;
+      }
+
+      .result-title {
+        font-size: 32px;
       }
 
       .result-buttons {
@@ -554,18 +493,11 @@
 
   <!-- 시작 화면 -->
   <section id="startScreen" class="screen active">
-
     <div class="card">
 
       <div class="start-hero">
-
-        <div class="start-mini">
-          🌟 나의 봉사 성향
-        </div>
-
-        <div class="start-icon">
-          💚
-        </div>
+        <div class="start-mini">🌟 나의 봉사 성향</div>
+        <div class="start-icon">💚</div>
 
         <h1 class="start-title">
           나의 봉사 성향 테스트
@@ -575,7 +507,6 @@
           “나는 어떤 봉사와 가장 잘 맞을까?”<br>
           정답은 없어요! 나와 가장 가까운 답을 골라주세요.
         </p>
-
       </div>
 
       <div class="start-content">
@@ -585,13 +516,11 @@
         </h2>
 
         <div class="type-grid">
-
           <div class="type-item">❤️ 따뜻한 나눔형</div>
           <div class="type-item">⭐ 함께하는 리더형</div>
           <div class="type-item">🌱 환경 실천형</div>
           <div class="type-item">🎨 재능나눔형</div>
           <div class="type-item">📚 성장 지원형</div>
-
         </div>
 
         <div class="guide-box">
@@ -602,9 +531,8 @@
           나에게 자연스럽고 즐거운 봉사를 찾아보세요!
         </div>
 
-        <label for="nameInput" class="name-label">
-          이름
-          <span class="optional">(선택)</span>
+        <label class="name-label" for="nameInput">
+          이름 <span style="font-weight:500;color:#899b94;">(선택)</span>
         </label>
 
         <input
@@ -613,7 +541,6 @@
           type="text"
           maxlength="12"
           placeholder="이름을 입력해주세요"
-          autocomplete="off"
         />
 
         <button
@@ -635,20 +562,16 @@
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- 질문 화면 -->
+  <!-- 질문 -->
   <section id="quizScreen" class="screen">
-
     <div class="card quiz-inner">
 
       <div class="quiz-header">
 
         <button
           id="backBtn"
-          type="button"
           class="back-btn"
           onclick="goBack()"
         >
@@ -656,155 +579,102 @@
         </button>
 
         <div class="counter">
-          <span id="currentQuestion">1</span>
-          /
+          <span id="currentQuestion">1</span> /
           <span id="totalQuestion">6</span>
         </div>
 
       </div>
 
       <div class="progress-track">
-        <div
-          id="progressBar"
-          class="progress-bar"
-        ></div>
+        <div id="progressBar" class="progress-bar"></div>
       </div>
 
       <div class="question-area">
 
-        <p
-          id="questionNumber"
-          class="question-number"
-        >
+        <p id="questionNumber" class="question-number">
           QUESTION 01
         </p>
 
-        <h2
-          id="questionText"
-          class="question-text"
-        ></h2>
+        <h2 id="questionText" class="question-text"></h2>
 
       </div>
 
-      <div
-        id="answerList"
-        class="answer-list"
-      ></div>
+      <div id="answerList" class="answer-list"></div>
 
     </div>
-
   </section>
 
-
-  <!-- 결과 화면 -->
+  <!-- 결과 -->
   <section id="resultScreen" class="screen">
-
     <div class="card result-inner">
 
       <div class="result-top">
         🎉 나의 봉사 성향 결과
       </div>
 
-      <div
-        id="resultCard"
-        class="result-card"
-      >
+      <div id="resultCard" class="result-card">
 
-        <div
-          id="resultIcon"
-          class="result-icon"
-        ></div>
+        <div id="resultIcon" class="result-icon"></div>
 
-        <div
-          id="resultLabel"
-          class="result-label"
-        >
+        <div id="resultLabel" class="result-label">
           나의 봉사 성향은?
         </div>
 
-        <h2
-          id="resultTitle"
-          class="result-title"
-        ></h2>
+        <h2 id="resultTitle" class="result-title"></h2>
 
-        <p
-          id="resultTagline"
-          class="result-tagline"
-        ></p>
+        <p id="resultTagline" class="result-tagline"></p>
 
-        <p
-          id="resultDescription"
-          class="result-description"
-        ></p>
+        <p id="resultDescription" class="result-description"></p>
 
         <div class="result-section">
-
           <h3>✨ 나의 봉사 키워드</h3>
-
-          <div
-            id="keywordList"
-            class="tag-list"
-          ></div>
-
+          <div id="keywordList" class="tag-list"></div>
         </div>
 
         <div class="result-section">
-
           <h3>🙌 추천 봉사활동</h3>
-
-          <div
-            id="recommendList"
-            class="tag-list"
-          ></div>
-
+          <div id="recommendList" class="tag-list"></div>
         </div>
 
-        <div
-          id="resultMessage"
-          class="result-message"
-        ></div>
-
-
-        <!-- 외부 링크 -->
-        <div class="link-section">
-
-          <h3 class="link-title">
-            🔎 봉사활동 더 찾아보기
-          </h3>
-
-          <a
-            href="https://www.1365.go.kr/vols/main.do"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="portal-btn"
-          >
-            1365 자원봉사포털 바로가기
-          </a>
-
-          <a
-            href="https://www.bsjingu1365.or.kr/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="center-btn"
-          >
-            부산진구자원봉사센터 홈페이지 바로가기
-          </a>
-
-          <div class="link-guide">
-            나에게 맞는 봉사 유형을 확인했다면<br>
-            1365 자원봉사포털과 부산진구자원봉사센터 홈페이지에서
-            실제 참여할 수 있는 봉사활동을 찾아보세요!
-          </div>
-
-        </div>
+        <div id="resultMessage" class="result-message"></div>
 
       </div>
 
+      <!-- 이 부분이 결과 화면에 항상 표시됩니다 -->
+      <div class="volunteer-links">
+
+        <h3 class="volunteer-links-title">
+          🔎 나에게 맞는 봉사활동 찾아보기
+        </h3>
+
+        <p class="volunteer-links-text">
+          나의 봉사 성향을 확인했다면<br>
+          실제 참여할 수 있는 봉사활동도 찾아보세요!
+        </p>
+
+        <a
+          class="external-link link-1365"
+          href="https://www.1365.go.kr/vols/main.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          1365 자원봉사포털 바로가기
+        </a>
+
+        <a
+          class="external-link link-center"
+          href="https://www.bsjingu1365.or.kr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          부산진구자원봉사센터 홈페이지 바로가기
+        </a>
+
+      </div>
 
       <div class="result-buttons">
 
         <button
-          type="button"
           class="share-btn"
           onclick="shareResult()"
         >
@@ -812,7 +682,6 @@
         </button>
 
         <button
-          type="button"
           class="restart-btn"
           onclick="restartTest()"
         >
@@ -821,17 +690,12 @@
 
       </div>
 
-      <p
-        id="shareStatus"
-        class="share-status"
-      ></p>
+      <p id="shareStatus" class="share-status"></p>
 
     </div>
-
   </section>
 
 </main>
-
 
 <script>
 
@@ -840,16 +704,10 @@ const TYPES = {
   A: {
     title: "따뜻한 나눔형",
     icon: "❤️",
-    tagline:
-      "공감과 배려로 이웃에게 따뜻함을 전하는 봉사자",
+    tagline: "공감과 배려로 이웃에게 따뜻함을 전하는 봉사자",
     description:
       "다른 사람의 이야기에 귀 기울이고 도움이 필요한 사람을 살피는 데 자연스럽게 마음이 가는 유형이에요. 사람과 사람 사이의 따뜻한 관계를 중요하게 생각하며 직접적인 나눔과 돌봄 활동에서 큰 보람을 느낄 수 있어요.",
-    keywords: [
-      "공감",
-      "배려",
-      "소통",
-      "돌봄"
-    ],
+    keywords: ["공감", "배려", "소통", "돌봄"],
     recommends: [
       "어르신 말벗",
       "안부 확인",
@@ -867,16 +725,10 @@ const TYPES = {
   B: {
     title: "함께하는 리더형",
     icon: "⭐",
-    tagline:
-      "사람들과 힘을 모아 변화를 이끌어가는 봉사자",
+    tagline: "사람들과 힘을 모아 변화를 이끌어가는 봉사자",
     description:
       "여러 사람과 함께 활동하고 의견을 모아 하나의 목표를 이루는 과정에서 즐거움을 느끼는 유형이에요. 사람들을 자연스럽게 연결하고 활동을 이끌어가는 역할에 잘 어울려요.",
-    keywords: [
-      "리더십",
-      "협동",
-      "적극성",
-      "소통"
-    ],
+    keywords: ["리더십", "협동", "적극성", "소통"],
     recommends: [
       "캠페인 운영",
       "행사 진행",
@@ -894,16 +746,10 @@ const TYPES = {
   C: {
     title: "환경 실천형",
     icon: "🌱",
-    tagline:
-      "작은 행동부터 직접 실천하며 변화를 만드는 봉사자",
+    tagline: "작은 행동부터 직접 실천하며 변화를 만드는 봉사자",
     description:
-      "생각에 그치지 않고 직접 행동하는 것을 중요하게 여기는 유형이에요. 특히 환경과 지역사회의 변화를 눈으로 확인할 수 있는 실천형 활동에서 즐거움과 성취감을 느낄 수 있어요.",
-    keywords: [
-      "실천",
-      "환경",
-      "책임감",
-      "지속가능성"
-    ],
+      "생각에 그치지 않고 직접 행동하는 것을 중요하게 여기는 유형이에요. 환경과 지역사회의 변화를 눈으로 확인할 수 있는 실천형 활동에서 즐거움과 성취감을 느낄 수 있어요.",
+    keywords: ["실천", "환경", "책임감", "지속가능성"],
     recommends: [
       "플로깅",
       "환경정화",
@@ -921,16 +767,10 @@ const TYPES = {
   D: {
     title: "재능나눔형",
     icon: "🎨",
-    tagline:
-      "자신의 재능과 아이디어를 나눔으로 연결하는 봉사자",
+    tagline: "자신의 재능과 아이디어를 나눔으로 연결하는 봉사자",
     description:
       "그림, 음악, 만들기, 사진, 영상, 글쓰기처럼 자신이 좋아하거나 잘하는 일을 다른 사람과 나누는 것을 즐기는 유형이에요. 나만의 개성과 아이디어를 봉사활동과 연결할 때 더욱 큰 즐거움을 느낄 수 있어요.",
-    keywords: [
-      "창의성",
-      "재능",
-      "표현",
-      "아이디어"
-    ],
+    keywords: ["창의성", "재능", "표현", "아이디어"],
     recommends: [
       "미술·공예 봉사",
       "공연 봉사",
@@ -948,16 +788,10 @@ const TYPES = {
   E: {
     title: "성장 지원형",
     icon: "📚",
-    tagline:
-      "배움과 경험을 나누며 다른 사람의 성장을 돕는 봉사자",
+    tagline: "배움과 경험을 나누며 다른 사람의 성장을 돕는 봉사자",
     description:
-      "새로운 것을 배우고 다른 사람에게 알려주는 과정을 좋아하는 유형이에요. 내가 알고 있는 지식과 경험을 나누고 상대방이 조금씩 성장하는 모습을 볼 때 큰 보람을 느낄 수 있어요.",
-    keywords: [
-      "배움",
-      "교육",
-      "성장",
-      "멘토링"
-    ],
+      "새로운 것을 배우고 다른 사람에게 알려주는 과정을 좋아하는 유형이에요. 내가 알고 있는 지식과 경험을 나누고 상대방이 성장하는 모습을 볼 때 큰 보람을 느낄 수 있어요.",
+    keywords: ["배움", "교육", "성장", "멘토링"],
     recommends: [
       "학습 멘토링",
       "진로 멘토링",
@@ -975,109 +809,71 @@ const TYPES = {
 };
 
 
-/* 6개 문항 */
-
 const QUESTIONS = [
 
   {
-    text:
-      "봉사활동을 시작한다면 가장 끌리는 활동은?",
+    text: "봉사활동을 시작한다면 가장 끌리는 활동은?",
     answers: {
-      A:
-        "혼자 계신 어르신의 말벗이 되어드리기",
-      B:
-        "친구들과 함께 캠페인을 기획하고 진행하기",
-      C:
-        "우리 동네를 걸으며 환경정화 활동하기",
-      D:
-        "그림이나 만들기 재능을 활용해 나눔하기",
-      E:
-        "어린 친구들의 공부나 체험활동 도와주기"
+      A: "혼자 계신 어르신의 말벗이 되어드리기",
+      B: "친구들과 함께 캠페인을 기획하고 진행하기",
+      C: "우리 동네를 걸으며 환경정화 활동하기",
+      D: "그림이나 만들기 재능을 활용해 나눔하기",
+      E: "어린 친구들의 공부나 체험활동 도와주기"
     }
   },
 
   {
-    text:
-      "친구들과 무언가를 준비할 때 나는?",
+    text: "친구들과 무언가를 준비할 때 나는?",
     answers: {
-      A:
-        "힘들어하는 친구가 없는지 먼저 살펴본다.",
-      B:
-        "의견을 내고 친구들의 역할을 정리한다.",
-      C:
-        "작은 것이라도 직접 행동으로 옮기는 편이다.",
-      D:
-        "재미있고 새로운 아이디어를 제안한다.",
-      E:
-        "친구들이 어려워하는 부분을 설명해준다."
+      A: "힘들어하는 친구가 없는지 먼저 살펴본다.",
+      B: "의견을 내고 친구들의 역할을 정리한다.",
+      C: "작은 것이라도 직접 행동으로 옮기는 편이다.",
+      D: "재미있고 새로운 아이디어를 제안한다.",
+      E: "친구들이 어려워하는 부분을 설명해준다."
     }
   },
 
   {
-    text:
-      "봉사활동을 마친 뒤 가장 뿌듯할 것 같은 순간은?",
+    text: "봉사활동을 마친 뒤 가장 뿌듯할 것 같은 순간은?",
     answers: {
-      A:
-        "“덕분에 힘이 됐어요.”라는 말을 들었을 때",
-      B:
-        "모두가 힘을 합쳐 목표를 달성했을 때",
-      C:
-        "나의 작은 행동으로 주변에 변화가 생겼을 때",
-      D:
-        "내가 가진 재능으로 사람들이 즐거워할 때",
-      E:
-        "내가 도운 사람이 새로운 것을 배우거나 성장했을 때"
+      A: "“덕분에 힘이 됐어요.”라는 말을 들었을 때",
+      B: "모두가 힘을 합쳐 목표를 달성했을 때",
+      C: "나의 작은 행동으로 주변에 변화가 생겼을 때",
+      D: "내가 가진 재능으로 사람들이 즐거워할 때",
+      E: "내가 도운 사람이 새로운 것을 배우거나 성장했을 때"
     }
   },
 
   {
-    text:
-      "우리 동네에 새로운 봉사활동을 만든다면?",
+    text: "우리 동네에 새로운 봉사활동을 만든다면?",
     answers: {
-      A:
-        "홀로 지내는 이웃에게 안부를 전하는 활동",
-      B:
-        "주민들이 함께 참여하는 캠페인",
-      C:
-        "깨끗한 우리 동네를 만드는 환경 프로젝트",
-      D:
-        "주민들과 함께하는 문화·예술 체험활동",
-      E:
-        "아이들과 함께 배우는 교육·멘토링 활동"
+      A: "홀로 지내는 이웃에게 안부를 전하는 활동",
+      B: "주민들이 함께 참여하는 캠페인",
+      C: "깨끗한 우리 동네를 만드는 환경 프로젝트",
+      D: "주민들과 함께하는 문화·예술 체험활동",
+      E: "아이들과 함께 배우는 교육·멘토링 활동"
     }
   },
 
   {
-    text:
-      "봉사활동에서 내가 맡고 싶은 역할은?",
+    text: "봉사활동에서 내가 맡고 싶은 역할은?",
     answers: {
-      A:
-        "참여자를 세심하게 챙기는 역할",
-      B:
-        "사람들을 이끌고 전체 활동을 진행하는 역할",
-      C:
-        "현장에서 직접 움직이고 실천하는 역할",
-      D:
-        "홍보물이나 체험 프로그램을 만드는 역할",
-      E:
-        "활동 내용을 설명하고 알려주는 역할"
+      A: "참여자를 세심하게 챙기는 역할",
+      B: "사람들을 이끌고 전체 활동을 진행하는 역할",
+      C: "현장에서 직접 움직이고 실천하는 역할",
+      D: "홍보물이나 체험 프로그램을 만드는 역할",
+      E: "활동 내용을 설명하고 알려주는 역할"
     }
   },
 
   {
-    text:
-      "내가 생각하는 가장 멋진 봉사자는?",
+    text: "내가 생각하는 가장 멋진 봉사자는?",
     answers: {
-      A:
-        "다른 사람의 마음을 따뜻하게 살피는 사람",
-      B:
-        "여러 사람을 하나로 모아 함께 행동하는 사람",
-      C:
-        "작은 일이라도 꾸준히 실천하는 사람",
-      D:
-        "자신이 가진 재능을 기꺼이 나누는 사람",
-      E:
-        "자신의 지식과 경험을 다른 사람과 나누는 사람"
+      A: "다른 사람의 마음을 따뜻하게 살피는 사람",
+      B: "여러 사람을 하나로 모아 함께 행동하는 사람",
+      C: "작은 일이라도 꾸준히 실천하는 사람",
+      D: "자신이 가진 재능을 기꺼이 나누는 사람",
+      E: "자신의 지식과 경험을 다른 사람과 나누는 사람"
     }
   }
 
@@ -1085,12 +881,9 @@ const QUESTIONS = [
 
 
 let currentQuestion = 0;
-let answers =
-  new Array(QUESTIONS.length).fill(null);
+let answers = new Array(QUESTIONS.length).fill(null);
 let userName = "";
 
-
-/* 화면 이동 */
 
 function showScreen(id) {
 
@@ -1104,15 +897,9 @@ function showScreen(id) {
     .getElementById(id)
     .classList.add("active");
 
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-
+  window.scrollTo(0, 0);
 }
 
-
-/* 테스트 시작 */
 
 function startTest() {
 
@@ -1130,11 +917,8 @@ function startTest() {
   renderQuestion();
 
   showScreen("quizScreen");
-
 }
 
-
-/* 질문 출력 */
 
 function renderQuestion() {
 
@@ -1181,8 +965,7 @@ function renderQuestion() {
 
 
   const answerList =
-    document
-      .getElementById("answerList");
+    document.getElementById("answerList");
 
   answerList.innerHTML = "";
 
@@ -1194,19 +977,17 @@ function renderQuestion() {
       const button =
         document.createElement("button");
 
-      button.type =
-        "button";
-
       button.className =
         "answer-btn";
 
-      button.innerHTML = `
-        <span class="answer-letter">${type}</span>
-        <span>${text}</span>
-      `;
+      button.innerHTML =
+        '<span class="answer-letter">' +
+        type +
+        '</span><span>' +
+        text +
+        '</span>';
 
-      button.addEventListener(
-        "click",
+      button.onclick =
         function() {
 
           answers[currentQuestion] =
@@ -1225,19 +1006,12 @@ function renderQuestion() {
             showResult();
 
           }
+        };
 
-        }
-      );
-
-      answerList
-        .appendChild(button);
-
+      answerList.appendChild(button);
     });
-
 }
 
-
-/* 이전 문항 */
 
 function goBack() {
 
@@ -1247,11 +1021,8 @@ function goBack() {
     renderQuestion();
 
   }
-
 }
 
-
-/* 결과 계산 */
 
 function calculateResult() {
 
@@ -1263,31 +1034,25 @@ function calculateResult() {
     E: 0
   };
 
-  answers.forEach(
-    function(answer) {
+  answers.forEach(function(answer) {
 
-      if (answer) {
-        score[answer]++;
-      }
-
+    if (answer) {
+      score[answer]++;
     }
-  );
+
+  });
 
 
   const maxScore =
-    Math.max(
-      ...Object.values(score)
-    );
+    Math.max(...Object.values(score));
 
 
   const tied =
     Object
       .keys(score)
-      .filter(
-        function(type) {
-          return score[type] === maxScore;
-        }
-      );
+      .filter(function(type) {
+        return score[type] === maxScore;
+      });
 
 
   if (tied.length === 1) {
@@ -1295,70 +1060,62 @@ function calculateResult() {
   }
 
 
-  /* 동점: Q3 → Q1 */
+  /* 동점: Q3 우선 */
 
-  if (
-    tied.includes(answers[2])
-  ) {
+  if (tied.includes(answers[2])) {
     return answers[2];
   }
 
 
-  if (
-    tied.includes(answers[0])
-  ) {
+  /* 그다음 Q1 */
+
+  if (tied.includes(answers[0])) {
     return answers[0];
   }
 
 
   return tied[0];
-
 }
 
 
-/* 결과 출력 */
-
 function showResult() {
 
-  const type =
-    calculateResult();
-
   const result =
-    TYPES[type];
+    TYPES[calculateResult()];
 
 
-  const resultIcon =
-    document
-      .getElementById("resultIcon");
-
-  resultIcon.textContent =
+  document
+    .getElementById("resultIcon")
+    .textContent =
     result.icon;
 
-  resultIcon.style.background =
+  document
+    .getElementById("resultIcon")
+    .style.background =
     result.soft;
 
 
-  const resultLabel =
-    document
-      .getElementById("resultLabel");
-
-  resultLabel.textContent =
+  document
+    .getElementById("resultLabel")
+    .textContent =
     userName
       ? userName + "님의 봉사 성향은?"
       : "나의 봉사 성향은?";
 
-  resultLabel.style.color =
+  document
+    .getElementById("resultLabel")
+    .style.color =
     result.color;
 
 
-  const resultTitle =
-    document
-      .getElementById("resultTitle");
-
-  resultTitle.textContent =
+  document
+    .getElementById("resultTitle")
+    .textContent =
     result.title;
 
-  resultTitle.style.color =
+  document
+    .getElementById("resultTitle")
+    .style.color =
     result.color;
 
 
@@ -1381,67 +1138,41 @@ function showResult() {
 
 
   const keywordList =
-    document
-      .getElementById("keywordList");
+    document.getElementById("keywordList");
 
   keywordList.innerHTML = "";
 
+  result.keywords.forEach(function(keyword) {
 
-  result.keywords.forEach(
-    function(keyword) {
+    const tag =
+      document.createElement("span");
 
-      const tag =
-        document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = keyword;
+    tag.style.background = result.soft;
+    tag.style.color = result.color;
 
-      tag.className =
-        "tag";
-
-      tag.textContent =
-        keyword;
-
-      tag.style.background =
-        result.soft;
-
-      tag.style.color =
-        result.color;
-
-      keywordList
-        .appendChild(tag);
-
-    }
-  );
+    keywordList.appendChild(tag);
+  });
 
 
   const recommendList =
-    document
-      .getElementById("recommendList");
+    document.getElementById("recommendList");
 
   recommendList.innerHTML = "";
 
+  result.recommends.forEach(function(item) {
 
-  result.recommends.forEach(
-    function(item) {
+    const tag =
+      document.createElement("span");
 
-      const tag =
-        document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = item;
+    tag.style.background = result.soft;
+    tag.style.color = result.color;
 
-      tag.className =
-        "tag";
-
-      tag.textContent =
-        item;
-
-      tag.style.background =
-        result.soft;
-
-      tag.style.color =
-        result.color;
-
-      recommendList
-        .appendChild(tag);
-
-    }
-  );
+    recommendList.appendChild(tag);
+  });
 
 
   document
@@ -1450,17 +1181,9 @@ function showResult() {
     "“" + result.message + "”";
 
 
-  document
-    .getElementById("shareStatus")
-    .textContent = "";
-
-
   showScreen("resultScreen");
-
 }
 
-
-/* 다시 테스트 */
 
 function restartTest() {
 
@@ -1476,27 +1199,16 @@ function restartTest() {
     .value = "";
 
   showScreen("startScreen");
-
 }
 
 
-/* 결과 공유 */
-
 async function shareResult() {
 
-  const type =
-    calculateResult();
-
   const result =
-    TYPES[type];
-
-  const nameText =
-    userName
-      ? userName + "님의 "
-      : "나의 ";
+    TYPES[calculateResult()];
 
   const shareText =
-    nameText +
+    (userName ? userName + "님의 " : "나의 ") +
     "봉사 성향은 " +
     result.icon +
     " " +
@@ -1512,10 +1224,8 @@ async function shareResult() {
     try {
 
       await navigator.share({
-        title:
-          "나의 봉사 성향 테스트",
-        text:
-          shareText
+        title: "나의 봉사 성향 테스트",
+        text: shareText
       });
 
     } catch (error) {}
@@ -1543,24 +1253,7 @@ async function shareResult() {
     }
 
   }
-
 }
-
-
-/* Enter 키로 시작 */
-
-document
-  .getElementById("nameInput")
-  .addEventListener(
-    "keydown",
-    function(event) {
-
-      if (event.key === "Enter") {
-        startTest();
-      }
-
-    }
-  );
 
 </script>
 
